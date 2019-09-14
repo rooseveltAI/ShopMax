@@ -1,0 +1,23 @@
+.hero--header {
+  background: url("../../images/banner_img_mobile.png") no-repeat center center /
+    cover;
+  height: 50vh;
+  width: 100%;
+
+  .btn--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .white-btn {
+    background: #fff;
+    color: #000;
+    margin-inline-end: 2em;
+  }
+
+  .dark-green--btn {
+    background: var(--dark-green);
+    color: #ffffff;
+  }
+}
