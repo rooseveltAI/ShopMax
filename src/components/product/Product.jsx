@@ -14,6 +14,14 @@ export default class Product extends Component {
         <div>
           <img src={img2} alt="products" />
         </div>
+
+        <div>
+          <img src={img2} alt="products" />
+        </div>
+
+        <div>
+          <img src={img2} alt="products" />
+        </div>
       </div>
     );
   }

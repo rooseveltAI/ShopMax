@@ -2,5 +2,5 @@
   margin: 2em;
   display: grid;
   grid-gap: 1em;
-  grid-template-columns: var(--reponsive-grid-2cols);
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
 }
