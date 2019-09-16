@@ -23,7 +23,17 @@ export default function Navbar() {
           fill="#000" // small, medium, large, xlarge
         />
       </nav>
-      <hr />
+
+      <svg
+        className="nav--line"
+        width="375"
+        height="2"
+        viewBox="0 0 375 2"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 1L375 1.00003" stroke="#BDBBCD" stroke-width="0.5" />
+      </svg>
     </div>
   );
 }
