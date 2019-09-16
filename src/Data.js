@@ -2,7 +2,7 @@ export const storeProducts = [
   {
     id: 1,
     title: "white shirt",
-    img: "img/product_one.png",
+    img: "img/product-1.jpg",
     price: 10,
     company: "Gucci",
     info:
@@ -14,7 +14,7 @@ export const storeProducts = [
   {
     id: 2,
     title: "white shirt",
-    img: "img/product_one.png",
+    img: "img/product-2.jpg",
     price: 10,
     company: "Gucci",
     info:
@@ -26,7 +26,7 @@ export const storeProducts = [
   {
     id: 3,
     title: "white shirt",
-    img: "img/product_one.png",
+    img: "img/product-3.jpg",
     price: 10,
     company: "Gucci",
     info:
@@ -40,7 +40,7 @@ export const storeProducts = [
 export const detailProduct = {
   id: 1,
   title: "White shirt",
-  img: "img/product_one",
+  img: "img/product-5.jpg",
   price: 10,
   company: "Gucci",
   info:

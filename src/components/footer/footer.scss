@@ -42,7 +42,7 @@
     // }
 
     & p{
-      color: #979797;
+      color: var(--color-1);
     }
   }
 
@@ -52,7 +52,7 @@
     line-height: 132.5%;
     /* or 16px */
     letter-spacing: 0.03em;
-    color: #979797;
+    color: var(--color-1);
     margin-bottom: 5em;
   }
 
@@ -78,7 +78,7 @@
     line-height: 113.1%;
     /* or 14px */
     text-align: center;
-    color: #979797;
+    color: var(--color-1);
     padding: 4em 0 2em 0;
   }
 }
