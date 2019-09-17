@@ -2,16 +2,11 @@ import React, { Component } from "react";
 import HeroImage from "../header/HeroHeader";
 import Product from "../product/Product";
 import Title from "../Title";
-import { storeProducts } from "../../Data";
 import { ProductConsumer } from "../../context";
 
 import "./productlist.scss";
 
 export default class ProductList extends Component {
-  state = {
-    products: storeProducts
-  };
-
   render() {
     return (
       <div>
@@ -33,16 +28,15 @@ export default class ProductList extends Component {
             <Title name="Latest" title="Products" />
           </div>
 
-          <div>
+          <div className="product--card__container">
             <ProductConsumer>
               {value => {
                 return value.products.map(product => {
-                  return <Product product={product} />;
+                  return <Product key={product.id} product={product} />;
                 });
               }}
             </ProductConsumer>
           </div>
-          <Product />
         </React.Fragment>
       </div>
     );
