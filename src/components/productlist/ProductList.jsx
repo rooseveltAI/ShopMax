@@ -37,6 +37,9 @@ export default class ProductList extends Component {
               }}
             </ProductConsumer>
           </div>
+
+          <Title name="Discover" title="The Collection" />
+          
         </React.Fragment>
       </div>
     );

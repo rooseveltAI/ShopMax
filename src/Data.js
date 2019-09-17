@@ -34,7 +34,19 @@ export const storeProducts = [
     inCart: false,
     count: 0,
     total: 0
-  }
+  },
+  {
+    id: 4,
+    title: "white shirt",
+    img: "img/product-4.jpg",
+    price: 10,
+    company: "Gucci",
+    info:
+      "Lorem ipsuim dolor Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet sit ammet Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
 ];
 
 export const detailProduct = {
