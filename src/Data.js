@@ -46,7 +46,7 @@ export const storeProducts = [
     inCart: false,
     count: 0,
     total: 0
-  },
+  }
 ];
 
 export const detailProduct = {
@@ -56,8 +56,9 @@ export const detailProduct = {
   price: 10,
   company: "Gucci",
   info:
-    "Lorem ipsuim dolor Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet sit ammet Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet",
+    "Dress the population is an la based brand that created your go-to collection the girl that's invited to every party. She wants easy, sequins/embellished dresses at an affordable price point without compromising on quality. Each dress is lined with a high-grade lycra stretch that flatters & conforms to every shape, hiding any imperfections.",
   inCart: false,
+  inStock: 'In Stock',
   count: 0,
   total: 0
 };

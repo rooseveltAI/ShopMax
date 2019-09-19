@@ -1,0 +1,44 @@
+.details--image__container {
+  margin: 1em;
+
+  .details--image {
+    width: 100%;
+  }
+}
+.deatil--text--details {
+  margin: 1em;
+
+  .detail--title--h2 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 2em;
+  }
+
+  .detail--price {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .detail--available {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 4em;
+
+    .notif {
+      color: var(--pink-color);
+    }
+  }
+
+  .detail--info {
+    line-height: 1.5;
+  }
+
+  .add-to-cart-btn{
+    background: var(--pink-color);
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+  }
+}

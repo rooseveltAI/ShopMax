@@ -3,9 +3,9 @@ import { Switch, Route } from "react-router-dom";
 import "./styles/App.scss";
 
 import Navbar from "./components/navbar/Navbar";
-import Footer from './components/footer/Footer';
+import Footer from "./components/footer/Footer";
 import ProductList from "./components/productlist/ProductList";
-import Details from "./components/Details";
+import Details from "./components/details/Details";
 import Cart from "./components/Cart";
 import Default from "./components/Default";
 

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { ProductConsumer } from "../../context";
+import PropTypes from 'prop-types';
 
 import "./product.scss";
 
@@ -13,7 +14,7 @@ export default class Product extends Component {
           className="img--container"
           onClick={() => console.log("I was clicked")}
         >
-          <Link tp="/details">
+          <Link to="/details">
             <img src={img} alt="product" className="card--img" />
           </Link>
           <button
@@ -81,4 +82,14 @@ export default class Product extends Component {
       </div>
     );
   }
+}
+
+Product.propTypes = {
+  product:PropTypes.shape ({
+    id:PropTypes.number,
+    img:PropTypes.string,
+    title:PropTypes.string,
+    price:PropTypes.number,
+    inCart:PropTypes.bool
+  }).isRequired
 }
