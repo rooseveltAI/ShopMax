@@ -46,7 +46,55 @@ export const storeProducts = [
     inCart: false,
     count: 0,
     total: 0
-  }
+  },
+  {
+    id: 5,
+    title: "white shirt",
+    img: "img/product-5.jpg",
+    price: 10,
+    company: "Gucci",
+    info:
+      "Lorem ipsuim dolor Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet sit ammet Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 6,
+    title: "white shirt",
+    img: "img/product-6.jpg",
+    price: 10,
+    company: "Gucci",
+    info:
+      "Lorem ipsuim dolor Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet sit ammet Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 7,
+    title: "white shirt",
+    img: "img/product-7.jpg",
+    price: 10,
+    company: "Gucci",
+    info:
+      "Lorem ipsuim dolor Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet sit ammet Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 8,
+    title: "white shirt",
+    img: "img/product-10.jpg",
+    price: 10,
+    company: "Gucci",
+    info:
+      "Lorem ipsuim dolor Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet sit ammet Lorem ipsuim dolor sit ammet Lorem ipsuim dolor sit ammet",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
 ];
 
 export const detailProduct = {

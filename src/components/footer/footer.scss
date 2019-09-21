@@ -1,8 +1,10 @@
 .footer-bg {
   background: var(--dark-color);
   height: auto;
+  width: 100%;
   color: #fff;
   margin-top: 8em;
+  position: absolute;
 
   .footer--logo {
     margin: auto;
@@ -41,7 +43,7 @@
     //   margin-left: auto;
     // }
 
-    & p{
+    & p {
       color: var(--color-1);
     }
   }

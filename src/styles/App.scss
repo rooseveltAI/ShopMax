@@ -1,6 +1,59 @@
-.btn{
+.btn {
   border: none;
   padding: 15px;
   border-radius: 5px;
   text-align: center;
 }
+
+.title {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.discover--h1 {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discover--svg {
+  width: 150.49px;
+  height: 38.97px;
+  position: relative;
+  left: 4em;
+  top: 2.5em;
+
+  background: rgba(202, 217, 222, 0.54);
+  z-index: -1;
+}
+
+.collections--container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+
+  .discover--female {
+    background: url("../images/discover_female.png") no-repeat center center / cover;
+    height: 30vh;
+    width: 100%;
+  }
+  
+  .discover--male {
+    background: url("../images/discover_male.png") no-repeat center center / cover;
+    height: 30vh;
+    width: 100%;
+  }
+}
+

@@ -4,6 +4,11 @@ import Product from "../product/Product";
 import Title from "../Title";
 import { ProductConsumer } from "../../context";
 
+import LatestProducts from '../latestproduct/LatestProducts' 
+
+// import img1 from '../../images/discover_female';
+// import img2 from '../../images/discover_male';
+
 import "./productlist.scss";
 
 export default class ProductList extends Component {
@@ -28,6 +33,20 @@ export default class ProductList extends Component {
             <Title name="Latest" title="Products" />
           </div>
 
+          <LatestProducts />
+
+          <div className="discover--svg"></div>
+          <h1 className="discover--h1">
+            Discover The <br /> Collections.
+          </h1>
+
+          <div className="collections--container">
+            <div className="discover--female">image here</div>
+            <div className="discover--male"></div>
+          </div>
+
+          <Title name="All" title="Products" />
+
           <div className="product--card__container">
             <ProductConsumer>
               {value => {
@@ -37,9 +56,6 @@ export default class ProductList extends Component {
               }}
             </ProductConsumer>
           </div>
-
-          <Title name="Discover" title="The Collection" />
-          
         </React.Fragment>
       </div>
     );

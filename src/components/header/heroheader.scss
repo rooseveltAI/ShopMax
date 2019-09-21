@@ -1,22 +1,95 @@
 .hero--header {
-  background: url("../../images/banner_img_mobile.png") var(--no-repeat) var(--center-X-Y) / var(--cover);
+  background: url("../../images/banner_img_mobile.png") var(--no-repeat)
+    var(--center-X-Y) / var(--cover);
   height: 50vh;
   width: 100%;
 
-  .btn--container{
+  .btn--container {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .white-btn {
-    background: #fff;
     color: #000;
-    margin-inline-end: 2em;
+
+    /* create a small space when buttons wrap on 2 lines */
+    margin: 2px 0;
+
+    /* invisible border (will be colored on hover/focus) */
+    border: solid 1px transparent;
+    border-radius: 4px;
+
+    /* size comes from text & padding (no width/height) */
+    padding: 0.5em 1em;
+    font-size: 16px;
+
+    /* make sure colors have enough contrast! */
   }
 
   .dark-green--btn {
+    /* create a small space when buttons wrap on 2 lines */
+    margin: 2px 0;
+
+    /* invisible border (will be colored on hover/focus) */
+    border: solid 1px transparent;
+    border-radius: 4px;
+
+    /* size comes from text & padding (no width/height) */
+    padding: 0.5em 1em;
+
+    /* make sure colors have enough contrast! */
+
     background: var(--dark-green);
     color: #ffffff;
+    font-size: 16px;
+  }
+
+  .header--h1 {
+    font-family: Major Mono Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 64px;
+    /* identical to box height */
+
+    text-shadow: 0px 1.68953px 1.68953px rgba(0, 0, 0, 0.25);
+
+    background: linear-gradient(to right, #ffffff 100%, #ffffff 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
+    text-align: center;
+  }
+
+  .header--h3 {
+    font-family: Major Mono Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+
+    color: #ffffff;
+  }
+
+  .header--price {
+    font-family: Major Mono Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+
+    color: #ffffff;
+  }
+
+  .header--save--price {
+    font-family: Major Mono Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration-line: line-through;
+
+    color: #bdbbcd;
   }
 }

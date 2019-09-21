@@ -2,17 +2,23 @@
   margin: 25px 20px;
   display: flex;
   align-items: center;
-  
 
-  .cart{
+  .cart {
     margin-left: auto;
     margin-inline-end: 1.5em;
   }
 }
 
-.nav--line{
+.nav--line {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+}
+
+.nav--line {
+  width: 90%;
+  height: 0px;
+
+  border: 0.5px solid #bdbbcd;
 }
