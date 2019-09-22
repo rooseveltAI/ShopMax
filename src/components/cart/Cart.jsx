@@ -9,7 +9,7 @@ import CartTotals from './CartTotals'
 export default class Cart extends Component {
   render() {
     return (
-      <section>
+      <section className="cart--bg">
         <ProductConsumer>
           {value => {
             const { cart } = value;
@@ -17,6 +17,7 @@ export default class Cart extends Component {
               return (
                 <React.Fragment>
                   <Title name="Your" title="Cart" />
+                  <div className="nav--line"></div>
                   <CartColumns />
                   <CartList value={value} />
                   <CartTotals value={value} />

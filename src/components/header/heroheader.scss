@@ -1,48 +1,72 @@
+@import "../../styles/reset";
+
 .hero--header {
   background: url("../../images/banner_img_mobile.png") var(--no-repeat)
     var(--center-X-Y) / var(--cover);
   height: 50vh;
   width: 100%;
+  margin-top: 1em;
+
+  @include for-desktop-up {
+    background: url("../../images/banner_img_desktop.png") var(--no-repeat)
+      var(--center-X-Y) / var(--cover);
+    height: 100vh;
+  }
+
+  .header--contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .header--p {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+
+      @include for-desktop-up {
+        width: 20%;
+        position: relative;
+        bottom: 17em;
+        left: -5em;
+      }
+
+      & p {
+        font-size: 18px;
+
+        @include for-desktop-up {
+          font-size: 30px;
+        }
+      }
+    }
+  }
 
   .btn--container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 60%;
+
+    @include for-desktop-up{
+      width: 30%;
+      position: relative;
+      bottom: 16em;
+    }
   }
 
   .white-btn {
     color: #000;
-
-    /* create a small space when buttons wrap on 2 lines */
-    margin: 2px 0;
-
-    /* invisible border (will be colored on hover/focus) */
-    border: solid 1px transparent;
+    background: #ffffff;
     border-radius: 4px;
-
-    /* size comes from text & padding (no width/height) */
-    padding: 0.5em 1em;
-    font-size: 16px;
-
-    /* make sure colors have enough contrast! */
+    // font-size: 16px;
   }
 
   .dark-green--btn {
-    /* create a small space when buttons wrap on 2 lines */
-    margin: 2px 0;
-
-    /* invisible border (will be colored on hover/focus) */
-    border: solid 1px transparent;
     border-radius: 4px;
-
-    /* size comes from text & padding (no width/height) */
-    padding: 0.5em 1em;
-
-    /* make sure colors have enough contrast! */
-
     background: var(--dark-green);
     color: #ffffff;
-    font-size: 16px;
+    // font-size: 16px;
   }
 
   .header--h1 {
@@ -50,16 +74,18 @@
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
-    line-height: 64px;
-    /* identical to box height */
-
     text-shadow: 0px 1.68953px 1.68953px rgba(0, 0, 0, 0.25);
-
     background: linear-gradient(to right, #ffffff 100%, #ffffff 0%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0.5;
-    text-align: center;
+    position: relative;
+    top: 1.5em;
+
+    @include for-desktop-up {
+      font-size: 206px;
+      top: 0.3em;
+    }
   }
 
   .header--h3 {
@@ -70,13 +96,19 @@
     line-height: 18px;
 
     color: #ffffff;
+
+    @include for-desktop-up {
+      position: relative;
+      bottom: 5em;
+      font-size: 48px;
+    }
   }
 
   .header--price {
     font-family: Major Mono Display;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 30px;
     line-height: 12px;
 
     color: #ffffff;

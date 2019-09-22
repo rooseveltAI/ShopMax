@@ -1,3 +1,16 @@
+@import "../../styles/reset";
+
+.details--container {
+
+  @include for-desktop-up {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+    padding-top: 1em;
+  }
+}
+
 .details--image__container {
   margin: 1em;
 
@@ -34,11 +47,17 @@
     line-height: 1.5;
   }
 
-  .add-to-cart-btn{
+  .add-to-cart-btn {
     background: var(--pink-color);
     color: #ffffff;
     border: none;
     padding: 15px;
     border-radius: 4px;
+  }
+
+  .details--btn__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
   }
 }

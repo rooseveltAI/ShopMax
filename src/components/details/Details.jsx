@@ -23,17 +23,14 @@ export default class Details extends Component {
               {/* Title */}
               {/* end title */}
               {/* Product info */}
-              <div>
+              <div className="details--container">
                 <div className="details--image__container">
                   <img className="details--image" src={img} alt="detail" />
                 </div>
                 <div className="deatil--text--details">
                   <h2 className="detail--title--h2">{title}</h2>
                   <h4 className="detail--price">
-                    <strong>
-                      <span>$</span>
-                      {price}
-                    </strong>
+                    <strong>${price}</strong>
                   </h4>
                   <h4 className="detail--available">
                     Availbale: <strong className="notif">{inStock}</strong>
@@ -46,9 +43,9 @@ export default class Details extends Component {
                   <h4>Shipping and Returns</h4>
                   <hr />
                   {/* Buttons */}
-                  <div>
+                  <div className="details--btn__container">
                     <Link to="/">
-                      <button>Back to Products</button>
+                      <button className="btn btn--stroke">Back to Products</button>
                     </Link>
 
                     <button
@@ -57,7 +54,7 @@ export default class Details extends Component {
                         value.addToCart(id);
                         value.openModal(id);
                       }}
-                      className="add-to-cart-btn"
+                      className="btn btn--pink"
                     >
                       {inCart ? "in cart" : "Add to cart"}
                     </button>

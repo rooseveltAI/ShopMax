@@ -1,9 +1,11 @@
+@import "../../styles/reset";
+
 .footer-bg {
   background: var(--dark-color);
   height: auto;
   width: 100%;
   color: #fff;
-  margin-top: 8em;
+  margin-top: 4em;
   position: absolute;
 
   .footer--logo {
@@ -16,6 +18,16 @@
 
   .footer--container {
     margin: 42px;
+
+    & p {
+      color: var(--color-1);
+    }
+
+    @include for-desktop-up {
+      display: flex;
+      // align-items: center;
+      justify-content: space-around;
+    }
   }
 
   .blue-button {
@@ -31,6 +43,7 @@
     width: 222px;
     height: 63px;
     text-align: center;
+    cursor: pointer;
   }
 
   .f1 {
@@ -43,9 +56,7 @@
     //   margin-left: auto;
     // }
 
-    & p {
-      color: var(--color-1);
-    }
+    
   }
 
   .get-intouch-p {
@@ -56,6 +67,10 @@
     letter-spacing: 0.03em;
     color: var(--color-1);
     margin-bottom: 5em;
+
+    @include for-desktop-up {
+      width: 227px;
+    }
   }
 
   .form {

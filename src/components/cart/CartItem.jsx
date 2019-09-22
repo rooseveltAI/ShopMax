@@ -1,12 +1,14 @@
 import React from "react";
+import minus from '../../images/minus.svg';
+import plus from '../../images/plus.svg';
 
 export default function CartItem({ item, value }) {
   const { id, title, img, price, total, count } = item;
   const { increment, decrement, removeItem } = value;
   return (
-    <div>
+    <div className="cart--items__container">
       <div>
-        <button onClick={() => removeItem(id)}>
+        <button className="cart--remove--icon" onClick={() => removeItem(id)}>
           <svg
             width="24"
             height="24"
@@ -42,33 +44,39 @@ export default function CartItem({ item, value }) {
           </svg>
         </button>
       </div>
-      
+
       <div>
-        <img src={img} alt="product" />
+        <img className="cart--img" src={img} alt="product" />
+      </div>
+
+      <div className="cart--title__container">
+        <h4 className="cart--title">{title}</h4>
+      </div>
+
+      <div className="cart--price__container">
+        <h4 className="cart--price">${price}</h4>
+      </div>
+
+      <div className="cart--count">
+        <div>
+          <button className="icon--border" onClick={() => decrement(id)}>
+            <img src={minus} alt="minus"/>
+          </button>
+        </div>
+
+        <div>
+          <h5 className="cart--count--h5">{count}</h5>
+        </div>
+
+        <div>
+          <button className="icon--border" onClick={() => increment(id)}>
+            <img src={plus} alt="plus"/>
+          </button>
+        </div>
       </div>
 
       <div>
-        <h4>{title}</h4>
-      </div>
-
-      <div>
-        <h4>${price}</h4>
-      </div>
-
-      <div>
-        <button onClick={() => decrement(id)}>-</button>
-      </div>
-
-      <div>
-        <h5>{count}</h5>
-      </div>
-
-      <div>
-        <button onClick={() => increment(id)}>+</button>
-      </div>
-
-      <div>
-        <strong>item total: ${total}</strong>
+        <strong>Total: ${total}</strong>
       </div>
     </div>
   );

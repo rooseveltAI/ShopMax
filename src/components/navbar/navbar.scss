@@ -1,11 +1,66 @@
+@import "../../styles/reset";
+
+li {
+  display: none;
+  @include for-desktop-up {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    // margin-left: 2em;
+
+    & a {
+      font-weight: normal;
+      font-size: 18px;
+      // line-height: 18px;
+      /* identical to box height */
+
+      text-transform: uppercase;
+
+      color: #000000;
+    }
+  }
+}
+
 .nav {
-  margin: 25px 20px;
+  margin: auto;
   display: flex;
   align-items: center;
+  width: 90%;
+  padding: 25px 0 25px 0;
+
+  .logo {
+    @include for-desktop-up {
+      margin-left: auto;
+    }
+  }
+
+  .search--icon{
+    display: none;
+    @include for-desktop-up{
+      display: inline;
+    }
+  }
+
+  .last--child {
+    @include for-desktop-up {
+      position: relative;
+      right: -20em;
+    }
+  }
+
+  .second--child {
+    padding: 0 2em 0 2em;
+  }
 
   .cart {
     margin-left: auto;
     margin-inline-end: 1.5em;
+  }
+}
+
+.menu {
+  @include for-desktop-up {
+    display: none;
   }
 }
 
